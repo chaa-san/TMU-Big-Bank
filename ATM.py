@@ -2,6 +2,7 @@ from CardReader import CardReader
 from CashDispenser import CashDispenser
 from Display import Display
 from Keypad import Keypad
+from Transaction import Transaction
 
 class ATM:
     def __init__(self):
