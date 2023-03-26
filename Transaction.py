@@ -23,7 +23,7 @@ class Transaction(object):
     def getTransactionType(self):
         return self.transactionType
 
-    def executeTransaction(self, account1, *account2,): #update account with actual name
+    def executeTransaction(self, account1, *account2): #update account with actual name
         if self.transactionType.lower() == "withdraw":       #Withdraws Cash from account
             #check account balance with self.amount
             if not account1.balanceCheck(self.amount): 
