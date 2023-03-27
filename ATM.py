@@ -3,7 +3,7 @@ from CashDispenser import CashDispenser
 from Display import Display
 from Keypad import Keypad
 from Transaction import Transaction
-from account import Account
+from Account import Account
 
 class ATM:
     def __init__(self):
