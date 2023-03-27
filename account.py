@@ -45,15 +45,16 @@ class Account:
         print("NOT IMPLEMENTED")
         return False
     
+    def balanceCheck(self, amount):
+        if amount <= self.balance:
+            return True
+        return False
+    
 class SavingsAccount(Account):
     def __init__(self, fname, lname, id, startingBal):
         super().__init__(fname, lname, id, startingBal)
         self.accountType = "S"
 
-    def enoughFunds(self, amount):
-        if amount <= self.balance:
-            return True
-        return False
     
 
 class ChequingAccount(Account):
@@ -61,10 +62,6 @@ class ChequingAccount(Account):
         super().__init__(fname, lname, id, startingBal)
         self.accountType = "C"
 
-    def enoughFunds(self, amount):
-        if amount <= self.balance:
-            return True
-        return False
 
 
 
@@ -75,8 +72,8 @@ if __name__ == "__main__":
     print(newSav.getName())
     print(newSav.getaccountNumber())
 
-    print(newSav.enoughFunds(1000))
-    print(newSav.enoughFunds(100000))
+    print(newSav.balanceCheck(10000.0))
+    print(newSav.balanceCheck(10000.1))
 
     print(newSav.getError())
     print(newSav.getBalance())
