@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+*{
+  margin : 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #d9d9d9;
+  
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: #004c9b;
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80%;
+  max-width: 960px;
+  background-color: #ffdc00;
+}
+
+.navbar-text {
+  font-size: 40px;
+  font-weight: bold;
+  background-color: #ffdc00;
+}
+body {
+  text-align: center;
+}
+.button {
+  
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #004c9b;
+  color: white;
+  text-align: center;
+  width: 25%;
+  font-size: 16px;
+  margin: 5px;
+  cursor: pointer;
+  
+}
+.button2 {
+  display: inline-block;
+  padding: 10px 10px;
+  background-color: #004c9b;
+  color: white;
+  text-align: center;
+  width: 40%;
+  font-size: 16px;
+  margin: 5px;
+  cursor: pointer;
+}
+.button3 { /* for the atm buttons */
+  display: inline-block;
+  padding: 10px 10px;
+  background-color: #004c9b;
+  color: white;
+  text-align: center;
+  width: 40%;
+  height: 22%;
+  font-size: 16px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 25px;
+}
+.button4 {
+  display: inline-block;
+  padding: 10px 10px;
+  background-color: #004c9b;
+  color: white;
+  text-align: center;
+  width: 80%;
+  height: 22%;
+  font-size: 16px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 25px;
+}
+.container {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 auto;
+  size: 80%;
+  border: 2px solid black;
+  
+}
+.container2 {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 30px; /* Change the value as per your desired spacing */
+  size: 100px;
+  border: 2px solid black;
+  border-radius: 25px;
+}
+.container3 {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 30px;
+  size: 100px;
+  height: 365px;
+  width: 300px;
+  border: 3px solid black;
+  
+  
+}
+
+input[type="text"] {
+  font-size: 22px;
+  text-align: center;
+}
+
+.display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: #faf0f0;
+  font-size: 50px;
+  text-align: center;
+  margin: 5px;
+  width: stretch;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 25px;
+  
+}
+
+.display2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: #faf0f0;
+  font-size: 50px;
+  text-align: center;
+  margin: 5px;
+  width: stretch;
+  height: 365px;
+  width: 500px;
+  border: 1px solid black;
+  border-radius: 25px;
+  overflow: auto;
+}
+.showPIN {
+  display: block;
+  padding: 10px;
+  border: 2px solid black;
+  font-size: 50px;
+  margin: 5px auto; /* center horizontally */
+  width: 25%;
+  height: 50px;
+}
+
+#display-container {
+  position: relative;
+}
+
+#button-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 5px;
+}
+
+#button-container button {
+  margin-right: 5px;
+}
